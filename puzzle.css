@@ -60,6 +60,7 @@ body {
 #reset {
     margin-top: 10px;
     display: inline-block;
+    line-height:28px;
     font-size: 24px;
     width: 100px;
     height: 28px;
@@ -68,7 +69,7 @@ body {
     border-radius: 5px;
     box-shadow: 2px 2px 5px #4c98f5;
     text-align: center;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 #message {
