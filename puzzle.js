@@ -17,7 +17,7 @@ function move(id) {
         document.getElementById("d" + id).style.left = d_posXY[target_d][0] + "px";
         document.getElementById("d" + id).style.top = d_posXY[target_d][1] + "px";
         ++stepcount;
-        document.getElementById("counter").innerText = "总步数  " + stepcount;
+        document.getElementById("counter").innerText = stepcount;
     }
     var finish_flag = true;
     for (var k = 1; k < 9; ++k) {
@@ -50,7 +50,7 @@ function whereCanTo(cur_div) {
 function reset() {
     random_d();
     stepcount = 0;
-    document.getElementById("counter").innerText = "总步数  " + stepcount;
+    document.getElementById("counter").innerText = stepcount;
     document.getElementById("message").innerText = "";
 }
 
@@ -90,5 +90,5 @@ function nxs() {
     return n;
 }
 
-window.onload = reset();
+window.onload = reset;
 

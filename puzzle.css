@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
     border: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
@@ -57,10 +60,25 @@ body {
     text-align: center;
 }
 
+#control #board, #control #counter {
+    font-size: 24px;
+    line-height: 30px;
+    display:inline-block;
+    float: left;
+}
+
+#control #board{
+    width:80px;
+}
+
+#control #counter{
+    width:40px;
+}
+
 #reset {
     margin-top: 10px;
     display: inline-block;
-    line-height:28px;
+    line-height: 28px;
     font-size: 24px;
     width: 100px;
     height: 28px;
@@ -69,7 +87,7 @@ body {
     border-radius: 5px;
     box-shadow: 2px 2px 5px #4c98f5;
     text-align: center;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #message {
